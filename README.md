@@ -61,9 +61,9 @@ Stars can be created with two methods:
 {{stars>5.5/7}}
 {{stars>700/1000}}
 ```
-![star1](http://zawiki.dyndns.org/~zas/zawiki/lib/exe/fetch.php/tschinz:programming:dw:skype:anim_rectangle.gif)
-![star2](http://zawiki.dyndns.org/~zas/zawiki/lib/exe/fetch.php/tschinz:programming:dw:skype:anim_balloon.gif)
-![star3](http://zawiki.dyndns.org/~zas/zawiki/lib/exe/fetch.php/tschinz:programming:dw:skype:anim_balloon.gif)
+![star1](https://raw.github.com/tschinz/dokuwiki_stars_plugin/master/images/fullstar.png)
+![star2](https://raw.github.com/tschinz/dokuwiki_stars_plugin/master/images/halfstar.png)
+![star3](https://raw.github.com/tschinz/dokuwiki_stars_plugin/master/images/emptystar.png)
 
 ## Thanks
   * Dark Glass - http://kde-look.org/usermanager/search.php?username=mentalrey
