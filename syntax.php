@@ -1,7 +1,7 @@
 <?php
 /*
  * DokuWiki stars plugin
- * Copyright (C) 2012 Zahno Silvan
+ * 2012 Zahno Silvan
  * Usage:
  *
  * {{stars>num}}         -- num = 5 or 5/7 or 100/1000
