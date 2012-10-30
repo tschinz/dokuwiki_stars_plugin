@@ -76,4 +76,4 @@ All documentation for the Stars Plugin is available online at:
   * [ZaWiki Plugin Page](http://zawiki.dyndns.org/~zas/zawiki/doku.php/tschinz:dw_stars)
   * [Github Project Page](https://github.com/tschinz/dokuwiki_stars_plugin)
 
-(c) 2011 by Zahno Silvan <zaswiki@gmail.com>
+2011 by Zahno Silvan <zaswiki@gmail.com>
