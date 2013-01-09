@@ -73,7 +73,7 @@ Stars can be created with two methods:
 All documentation for the Stars Plugin is available online at:
 
   * [Dokuwiki Plugin Page](http://dokuwiki.org/plugin:stars2)
-  * [ZaWiki Plugin Page](http://zawiki.dyndns.org/~zas/zawiki/doku.php/tschinz:dw_stars)
+  * [ZaWiki Plugin Page](http://zawiki.dyndns.org/doku.php/tschinz:dw_stars)
   * [Github Project Page](https://github.com/tschinz/dokuwiki_stars_plugin)
 
 2011 by Zahno Silvan <zaswiki@gmail.com>
