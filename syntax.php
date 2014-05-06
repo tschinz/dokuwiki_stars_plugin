@@ -44,7 +44,7 @@ class syntax_plugin_stars extends DokuWiki_Syntax_Plugin {
             'date'   => '2011-09-25',
             'name'   => 'Stars',
             'desc'   => 'Embedding Rating Stars',
-            'url'    => 'http://zawiki.dyndns.org/doku.php/tschinz:dw_stars',
+            'url'    => 'http://zawiki.zapto.org/doku.php/tschinz:dw_stars',
         );
     }
 
