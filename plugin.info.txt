@@ -4,4 +4,4 @@ email zaswiki@gmail.com
 date 2012-10-22
 name stars Plugin
 desc Dokuwiki Plugin to add stars for rating, difficulty etc.
-url http://zawiki.dyndns.org/doku.php/tschinz:dw_stars
+url http://zawiki.zapto.org/doku.php/tschinz:dw_stars
