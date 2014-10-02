@@ -4,4 +4,4 @@
  *
  * @author    Zahno Silvan <zaswiki@gmail.com>
  */
-$conf['height']    = '32';       // show playlist by default
+$conf['height']    = '32';       // default height of stars in pixels

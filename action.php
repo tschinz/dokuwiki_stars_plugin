@@ -40,42 +40,42 @@ class action_plugin_stars2 extends DokuWiki_Action_Plugin {
         $event->data[] = array (
             'type' => 'picker',
             'title' => $this->getLang('star'),
-            'icon' => '../../plugins/stars/images/toolbar/star.png',
+            'icon' => '../../plugins/stars2/images/toolbar/star.png',
             'list' => array(
                 array(
                     'type'   => 'insert',
                     'title'  => $this->getLang('star1'),
-                    'icon'   => '../../plugins/stars/images/toolbar/star1.png',
+                    'icon'   => '../../plugins/stars2/images/toolbar/star1.png',
                     'insert'=> '{{stars>1/5}}'
                 ),
                 array(
                     'type'   => 'insert',
                     'title'  => $this->getLang('star2'),
-                    'icon'   => '../../plugins/stars/images/toolbar/star2.png',
+                    'icon'   => '../../plugins/stars2/images/toolbar/star2.png',
                     'insert' => '{{stars>2/5}}'
                 ),
                 array(
                     'type'   => 'insert',
                     'title'  => $this->getLang('star3'),
-                    'icon'   => '../../plugins/stars/images/toolbar/star3.png',
+                    'icon'   => '../../plugins/stars2/images/toolbar/star3.png',
                     'insert' => '{{stars>3/5}}'
                 ),
                 array(
                     'type'   => 'insert',
                     'title'  => $this->getLang('star4'),
-                    'icon'   => '../../plugins/stars/images/toolbar/star4.png',
+                    'icon'   => '../../plugins/stars2/images/toolbar/star4.png',
                     'insert' => '{{stars>4/5}}'
                 ),
                 array(
                     'type'   => 'insert',
                     'title'  => $this->getLang('star5'),
-                    'icon'   => '../../plugins/stars/images/toolbar/star5.png',
+                    'icon'   => '../../plugins/stars2/images/toolbar/star5.png',
                     'insert' => '{{stars>5/5}}'
                 ),
                 array(
                     'type'   => 'insert',
                     'title'  => $this->getLang('star_not_rated'),
-                    'icon'   => '../../plugins/stars/images/toolbar/starnry.png',
+                    'icon'   => '../../plugins/stars2/images/toolbar/starnry.png',
                     'insert' => '{{stars>-1/5}}'
                 ),
             )
