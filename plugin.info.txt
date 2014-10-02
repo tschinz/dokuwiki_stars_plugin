@@ -1,4 +1,4 @@
-base stars
+base stars2
 author Zahno Silvan
 email zaswiki@gmail.com
 date 2014-10-02
