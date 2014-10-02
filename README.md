@@ -45,6 +45,7 @@
 * **2014-10-02**
   * Added correct pluginename for autoupdate
   * Added ODT plugin export support by Lars
+  * Images are now resizable over the config menu
 
 ## Syntax
 Stars can be created with two methods:

@@ -11,7 +11,7 @@ if(!defined('DOKU_INC')) die();
 if(!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN',DOKU_INC.'lib/plugins/');
 require_once(DOKU_PLUGIN.'action.php');
 
-class action_plugin_stars extends DokuWiki_Action_Plugin {
+class action_plugin_stars2 extends DokuWiki_Action_Plugin {
 
     /**
      * return some info
@@ -21,7 +21,7 @@ class action_plugin_stars extends DokuWiki_Action_Plugin {
             'author' => 'Zahno Silvan',
             'email'  => 'zaswiki@gmail.com',
             'date'   => '2014-10-02',
-            'name'   => 'Stars2',
+            'name'   => 'Stars2 Plugin',
             'desc'   => 'Embedding Rating Stars',
             'url'    => 'http://zawiki.zapto.org/doku.php/tschinz:dw_stars',
         );
