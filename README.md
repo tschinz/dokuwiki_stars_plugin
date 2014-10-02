@@ -19,7 +19,7 @@
   </tr>
   <tr>
     <th align="left">Lastupdate</th>
-    <td>2012-10-22</td>
+    <td>2014-10-02</td>
   </tr>
   <tr>
     <th align="left">Tags</th>
@@ -42,6 +42,9 @@
     * Thanks to  [Fabrice](fabrice@chtiland.com)
 * **2012-10-22**
   * Moved Repo to github
+* **2014-10-02**
+  * Added correct pluginename for autoupdate
+  * Added ODT plugin export support by Lars
 
 ## Syntax
 Stars can be created with two methods:
@@ -76,4 +79,4 @@ All documentation for the Stars Plugin is available online at:
   * [ZaWiki Plugin Page](http://zawiki.zapto.org/doku.php/tschinz:dw_stars)
   * [Github Project Page](https://github.com/tschinz/dokuwiki_stars_plugin)
 
-2011 by Zahno Silvan <zaswiki@gmail.com>
+2014 by Zahno Silvan <zaswiki@gmail.com>
