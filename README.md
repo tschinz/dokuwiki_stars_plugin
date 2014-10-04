@@ -44,7 +44,7 @@
   * Moved Repo to github
 * **2014-10-02**
   * Added correct pluginename for autoupdate
-  * Added ODT plugin export support by Lars
+  * Added ODT plugin export support by LarsDW223
   * Images are now resizable over the config menu
 
 ## Syntax
