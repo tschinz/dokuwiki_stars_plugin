@@ -1,7 +1,7 @@
 base stars2
 author Zahno Silvan
 email zaswiki@gmail.com
-date 2014-10-02
+date 2016-01-21
 name stars2 Plugin
 desc Dokuwiki Plugin to add stars for rating, difficulty etc.
 url http://zawiki.zapto.org/doku.php/tschinz:dw_stars

@@ -1,7 +1,7 @@
 <?php
 /*
  * DokuWiki stars plugin
- * 2014 Zahno Silvan
+ * 2016 Zahno Silvan
  * Usage:
  *
  * {{stars>num}}         -- num = 5 or 5/7 or 100/1000
@@ -25,7 +25,7 @@
 
 if(!defined('DOKU_INC')) define('DOKU_INC',realpath(dirname(__FILE__).'/../../').'/');
 if(!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN',DOKU_INC.'lib/plugins/');
-if(!defined('DOKU_PLUGIN_IMAGES')) define('DOKU_PLUGIN_IMAGES',DOKU_BASE.'lib/plugins/stars2/images/');
+if(!defined('DOKU_PLUGIN_STARS2_IMAGES')) define('DOKU_PLUGIN_STARS2_IMAGES',DOKU_BASE.'lib/plugins/stars2/images/');
 require_once(DOKU_PLUGIN.'syntax.php');
 
 /**
@@ -155,19 +155,19 @@ class syntax_plugin_stars2 extends DokuWiki_Syntax_Plugin {
         // render full stars
         for($i=1; $i<=$d[0]; $i++)
             if($nry == true)
-                $string .= '<img class="fullstarimage" id="'.$i.'" height="'.$options['height'].'" src="' . DOKU_PLUGIN_IMAGES . 'unknownstar.png"/>';
+                $string .= '<img class="fullstarimage" id="'.$i.'" height="'.$options['height'].'" src="' . DOKU_PLUGIN_STARS2_IMAGES . 'unknownstar.png"/>';
             else
-                $string .= '<img class="fullstarimage" id="'.$i.'" height="'.$options['height'].'" src="' . DOKU_PLUGIN_IMAGES . 'fullstar.png"/>';
+                $string .= '<img class="fullstarimage" id="'.$i.'" height="'.$options['height'].'" src="' . DOKU_PLUGIN_STARS2_IMAGES . 'fullstar.png"/>';
 
         // render half star if necessary
         if($i-.5 <= $d[0])
         {
-            $string .= '<img class="halfstarimage" id="'.$i.'" height="'.$options['height'].'" src="' . DOKU_PLUGIN_IMAGES . 'halfstar.png"/>';
+            $string .= '<img class="halfstarimage" id="'.$i.'" height="'.$options['height'].'" src="' . DOKU_PLUGIN_STARS2_IMAGES . 'halfstar.png"/>';
             $i+= .5;
         } // end if($i-$d[0] > 0)
 
         for($i;$i<=$d[1];$i++)
-            $string .= '<img class="emptystarimage" id="'.$i.'" height="'.$options['height'].'" src="' . DOKU_PLUGIN_IMAGES . 'emptystar.png"/>';
+            $string .= '<img class="emptystarimage" id="'.$i.'" height="'.$options['height'].'" src="' . DOKU_PLUGIN_STARS2_IMAGES . 'emptystar.png"/>';
                 
         $string .= '</span>';
         
@@ -183,17 +183,17 @@ class syntax_plugin_stars2 extends DokuWiki_Syntax_Plugin {
 
         // render full stars
         for($i=1; $i<=$d[0]; $i++)
-            $string .= '<img class="fullstarimage" id="'.$i.'" height="'.$options['height'].'" onmouseover="highlight(this.id)" onclick="setStar(this.id)" onmouseout="losehighlight(this.id)" src="' . DOKU_PLUGIN_IMAGES . 'fullstar.png"/>';
+            $string .= '<img class="fullstarimage" id="'.$i.'" height="'.$options['height'].'" onmouseover="highlight(this.id)" onclick="setStar(this.id)" onmouseout="losehighlight(this.id)" src="' . DOKU_PLUGIN_STARS2_IMAGES . 'fullstar.png"/>';
 
         // render half star if necessary
         if($i-.5 <= $d[0])
         {
-            $string .= '<img class="halfstarimage" id="'.$i.'" height="'.$options['height'].'" onmouseover="highlight(this.id)" onclick="setStar(this.id)" onmouseout="losehighlight(this.id)" src="' . DOKU_PLUGIN_IMAGES . 'halfstar.png"/>';
+            $string .= '<img class="halfstarimage" id="'.$i.'" height="'.$options['height'].'" onmouseover="highlight(this.id)" onclick="setStar(this.id)" onmouseout="losehighlight(this.id)" src="' . DOKU_PLUGIN_STARS2_IMAGES . 'halfstar.png"/>';
             $i+= .5;
         } // end if($i-$d[0] > 0)
 
         for($i;$i<=$d[1];$i++)
-            $string .= '<img class="emptystarimage" id="'.$i.'" height="'.$options['height'].'" onmouseover="highlight(this.id)" onclick="setStar(this.id)" onmouseout="losehighlight(this.id)" src="' . DOKU_PLUGIN_IMAGES . 'emptystar.png"/>';
+            $string .= '<img class="emptystarimage" id="'.$i.'" height="'.$options['height'].'" onmouseover="highlight(this.id)" onclick="setStar(this.id)" onmouseout="losehighlight(this.id)" src="' . DOKU_PLUGIN_STARS2_IMAGES . 'emptystar.png"/>';
 
         $string .= '</span>';
 
@@ -204,10 +204,10 @@ class syntax_plugin_stars2 extends DokuWiki_Syntax_Plugin {
     {
         // Prepare the full path for the function _odtAddImage
         // otherwise the file will not be found!
-        $src_unknown = DOKU_INC . DOKU_PLUGIN_IMAGES . 'unknownstar.png';
-        $src_full    = DOKU_INC . DOKU_PLUGIN_IMAGES . 'fullstar.png';
-        $src_half    = DOKU_INC . DOKU_PLUGIN_IMAGES . 'halfstar.png';
-        $src_empty   = DOKU_INC . DOKU_PLUGIN_IMAGES . 'emptystar.png';
+        $src_unknown = DOKU_INC . DOKU_PLUGIN_STARS2_IMAGES . 'unknownstar.png';
+        $src_full    = DOKU_INC . DOKU_PLUGIN_STARS2_IMAGES . 'fullstar.png';
+        $src_half    = DOKU_INC . DOKU_PLUGIN_STARS2_IMAGES . 'halfstar.png';
+        $src_empty   = DOKU_INC . DOKU_PLUGIN_STARS2_IMAGES . 'emptystar.png';
 
         // Not rated yet images
         if($d[0] < 0)
