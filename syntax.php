@@ -107,7 +107,7 @@ class syntax_plugin_stars2 extends DokuWiki_Syntax_Plugin {
             $empty = true;
 
             // Get seperate num's
-            $num=split('/',$num); // Strip size
+            $num=explode('/',$num); // Strip size
             if (!isset($num[1])) 
                 $num[1] = $num[0];
             
