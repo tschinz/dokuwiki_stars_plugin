@@ -20,7 +20,7 @@ class action_plugin_stars2 extends DokuWiki_Action_Plugin {
         return array(
             'author' => 'Zahno Silvan',
             'email'  => 'zaswiki@gmail.com',
-            'date'   => '2016-01-21',
+            'date'   => '2016-09-02',
             'name'   => 'Stars2 Plugin',
             'desc'   => 'Embedding Rating Stars',
             'url'    => 'http://zawiki.zapto.org/doku.php/tschinz:dw_stars',

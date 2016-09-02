@@ -48,6 +48,9 @@
   * Images are now resizable over the config menu
  * **2016-01-21**
   * Added better compatibility to other plugins by kernam
+ * **2016-09-02**
+  * Bugfix for Height adjustment by @borco
+  * Bugfix for php 7.0 compatibility by @LarsGit223
   
 ## Syntax
 Stars can be created with two methods:
