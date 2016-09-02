@@ -19,7 +19,7 @@
   </tr>
   <tr>
     <th align="left">Lastupdate</th>
-    <td>2016-01-21</td>
+    <td>2016-09-02</td>
   </tr>
   <tr>
     <th align="left">Tags</th>
@@ -46,9 +46,9 @@
   * Added correct pluginename for autoupdate
   * Added ODT plugin export support by LarsDW223
   * Images are now resizable over the config menu
- * **2016-01-21**
+* **2016-01-21**
   * Added better compatibility to other plugins by kernam
- * **2016-09-02**
+* **2016-09-02**
   * Bugfix for Height adjustment by @borco
   * Bugfix for php 7.0 compatibility by @LarsGit223
   
