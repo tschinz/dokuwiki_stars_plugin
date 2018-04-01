@@ -19,7 +19,7 @@
   </tr>
   <tr>
     <th align="left">Lastupdate</th>
-    <td>2016-09-02</td>
+    <td>2018-04-01</td>
   </tr>
   <tr>
     <th align="left">Tags</th>
@@ -51,7 +51,10 @@
 * **2016-09-02**
   * Bugfix for Height adjustment by @borco
   * Bugfix for php 7.0 compatibility by @LarsGit223
-  
+* **2018-04-01**
+  * Bugfix for register and handle method thanks to @sag1
+  * Bugfix for php 7.0 compatibility by @LarsGit223
+
 ## Syntax
 Stars can be created with two methods:
   - With the Toolbarbutton Stars 1-5
@@ -85,4 +88,4 @@ All documentation for the Stars Plugin is available online at:
   * [ZaWiki Plugin Page](http://zawiki.zapto.org/doku.php/tschinz:dw_stars)
   * [Github Project Page](https://github.com/tschinz/dokuwiki_stars_plugin)
 
-2016 by Zahno Silvan <zaswiki@gmail.com>
+2018 by Zahno Silvan <zaswiki@gmail.com>

@@ -1,27 +1,27 @@
 <?php
 /*
  * DokuWiki stars plugin
- * 2016 Zahno Silvan
+ * 2018 Zahno Silvan
  * Usage:
  *
  * {{stars>num}}         -- num = 5 or 5/7 or 100/1000
  *                       -- num = -1 gives a "not rated yet"
- * 
+ *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the LGNU Lesser General Public License as published by
  * the Free Software Foundation; either version 2 of the License, or
  * (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * LGNU Lesser General Public License for more details.
- * 
+ *
  * You should have received a copy of the LGNU Lesser General Public License
  * along with this program; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  */
- 
+
 
 if(!defined('DOKU_INC')) define('DOKU_INC',realpath(dirname(__FILE__).'/../../').'/');
 if(!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN',DOKU_INC.'lib/plugins/');
@@ -41,7 +41,7 @@ class syntax_plugin_stars2 extends DokuWiki_Syntax_Plugin {
         return array(
             'author' => 'Zahno Silvan',
             'email'  => 'zaswiki@gmail.com',
-            'date'   => '2016-09-02',
+            'date'   => '2018-04-01',
             'name'   => 'Stars2 Plugin',
             'desc'   => 'Embedding Rating Stars',
             'url'    => 'http://zawiki.zapto.org/doku.php/tschinz:dw_stars',
@@ -62,7 +62,6 @@ class syntax_plugin_stars2 extends DokuWiki_Syntax_Plugin {
         return 299;
     }
 
-
     /**
      * Connect pattern to lexer
      */
@@ -73,7 +72,7 @@ class syntax_plugin_stars2 extends DokuWiki_Syntax_Plugin {
     /**
      * Handle the match
      */
-    function handle($match, $state, $pos, &$handler){
+    function handle($match, $state, $pos, Doku_Handler $handler){
         switch ($state) {
           case DOKU_LEXER_ENTER :
             break;
@@ -93,7 +92,7 @@ class syntax_plugin_stars2 extends DokuWiki_Syntax_Plugin {
     /**
      * Create output
      */
-    function render($mode, &$renderer, $data) {
+    function render($mode, Doku_Renderer $renderer, $data) {
         if($mode == 'xhtml' || $mode == 'odt')
         {
             // strip {{stars> from start
@@ -101,24 +100,24 @@ class syntax_plugin_stars2 extends DokuWiki_Syntax_Plugin {
             // strip }} from end
             $data = substr($data,0,-2);
             $num = $data;
-            
+
             if (empty($num))
                 $num = "0/5";
             $empty = true;
 
             // Get seperate num's
             $num=explode('/',$num); // Strip size
-            if (!isset($num[1])) 
+            if (!isset($num[1]))
                 $num[1] = $num[0];
-            
-            if ($num[0]>$num[1]) 
+
+            if ($num[0]>$num[1])
                 $num[1]=$num[0];
-            
-            if ($num[1]>10) 
+
+            if ($num[1]>10)
             {
                 $num[0] = 10 * $num[0] / $num[1];
                 $num[1] = 10;
-            } // end if ($num[1]>10) 
+            } // end if ($num[1]>10)
             if ($mode == 'xhtml')
             {
                 if ($empty == true)
@@ -128,7 +127,7 @@ class syntax_plugin_stars2 extends DokuWiki_Syntax_Plugin {
             }
             else
             {
-                $this->_Stars_static_for_odt($renderer, $num); 
+                $this->_Stars_static_for_odt($renderer, $num);
             }
 
             return true;
@@ -151,7 +150,7 @@ class syntax_plugin_stars2 extends DokuWiki_Syntax_Plugin {
         }
         else
             $nry = false;
-        
+
         // render full stars
         for($i=1; $i<=$d[0]; $i++)
             if($nry == true)
@@ -168,12 +167,12 @@ class syntax_plugin_stars2 extends DokuWiki_Syntax_Plugin {
 
         for($i;$i<=$d[1];$i++)
             $string .= '<img class="emptystarimage" id="'.$i.'" style="height:'.$options['height'].'px;" src="' . DOKU_PLUGIN_STARS2_IMAGES . 'emptystar.png"/>';
-                
+
         $string .= '</span>';
-        
+
         return $string;
     } // end function _Stars_static($d)
-    
+
     function _Stars_dynamic($d)
     {
         # Get the config options
@@ -217,7 +216,7 @@ class syntax_plugin_stars2 extends DokuWiki_Syntax_Plugin {
         }
         else
             $nry = false;
-    
+
         // render full stars
         for($i=1; $i<=$d[0]; $i++)
         {
@@ -229,20 +228,20 @@ class syntax_plugin_stars2 extends DokuWiki_Syntax_Plugin {
             {
                 $renderer->_odtAddImage($src_full);
             }
-        }    
-                
+        }
+
         // render half star if necessary
         if($i-.5 <= $d[0])
         {
             $renderer->_odtAddImage($src_half);
             $i+= .5;
         } // end if($i-$d[0] > 0)
-        
+
         for($i;$i<=$d[1];$i++)
         {
             $renderer->_odtAddImage($src_empty);
         }
     } // end function _Stars_static_for_odt($d)
-    
+
 }
 
