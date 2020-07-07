@@ -32,7 +32,7 @@ class action_plugin_stars2 extends DokuWiki_Action_Plugin {
      *
      * @author Andreas Gohr <andi@splitbrain.org>
      */
-    function register(&$controller){
+    public function register(Doku_Event_Handler $controller){
         $controller->register_hook('TOOLBAR_DEFINE', 'AFTER', $this, 'handle_toolbar', array (5));
     }
 
