@@ -41,10 +41,10 @@ class syntax_plugin_stars2 extends DokuWiki_Syntax_Plugin {
         return array(
             'author' => 'Zahno Silvan',
             'email'  => 'zaswiki@gmail.com',
-            'date'   => '2018-04-01',
+            'date'   => '2020-07-07',
             'name'   => 'Stars2 Plugin',
             'desc'   => 'Embedding Rating Stars',
-            'url'    => 'http://zawiki.zapto.org/doku.php/tschinz:dw_stars',
+            'url'    => 'https://github.com/tschinz/dokuwiki_stars_plugin',
         );
     }
 

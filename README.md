@@ -19,7 +19,7 @@
   </tr>
   <tr>
     <th align="left">Lastupdate</th>
-    <td>2018-04-01</td>
+    <td>2020-07-07</td>
   </tr>
   <tr>
     <th align="left">Tags</th>
@@ -54,6 +54,8 @@
 * **2018-04-01**
   * Bugfix for register and handle method thanks to @sag1
   * Bugfix for php 7.0 compatibility by @LarsGit223
+* **2020-07-07**
+  * Bugfix for register and handle method thanks to @leperm
 
 ## Syntax
 Stars can be created with two methods:
@@ -85,7 +87,6 @@ Stars can be created with two methods:
 All documentation for the Stars Plugin is available online at:
 
   * [Dokuwiki Plugin Page](http://dokuwiki.org/plugin:stars2)
-  * [ZaWiki Plugin Page](http://zawiki.zapto.org/doku.php/tschinz:dw_stars)
   * [Github Project Page](https://github.com/tschinz/dokuwiki_stars_plugin)
 
 2018 by Zahno Silvan <zaswiki@gmail.com>
