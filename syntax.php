@@ -26,7 +26,6 @@
 if(!defined('DOKU_INC')) define('DOKU_INC',realpath(dirname(__FILE__).'/../../').'/');
 if(!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN',DOKU_INC.'lib/plugins/');
 if(!defined('DOKU_PLUGIN_STARS2_IMAGES')) define('DOKU_PLUGIN_STARS2_IMAGES',DOKU_BASE.'lib/plugins/stars2/images/');
-require_once(DOKU_PLUGIN.'syntax.php');
 
 /**
  * All DokuWiki plugins to extend the parser/rendering mechanism
@@ -41,7 +40,7 @@ class syntax_plugin_stars2 extends DokuWiki_Syntax_Plugin {
         return array(
             'author' => 'Zahno Silvan',
             'email'  => 'zaswiki@gmail.com',
-            'date'   => '2020-07-07',
+            'date'   => '2025-02-07',
             'name'   => 'Stars2 Plugin',
             'desc'   => 'Embedding Rating Stars',
             'url'    => 'https://github.com/tschinz/dokuwiki_stars_plugin',
