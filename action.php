@@ -3,13 +3,13 @@
  * @license    GPL 2 (http://www.gnu.org/licenses/gpl.html)
  * @author     Andreas Gohr <andi@splitbrain.org>
  * @author     Zahno Silvan <zaswiki@gmail.com>
+ * @author     Bart Vaes <bart.at.foss42@gmail.com>
  */
 
 // must be run within Dokuwiki
 if(!defined('DOKU_INC')) die();
 
 if(!defined('DOKU_PLUGIN')) define('DOKU_PLUGIN',DOKU_INC.'lib/plugins/');
-require_once(DOKU_PLUGIN.'action.php');
 
 class action_plugin_stars2 extends DokuWiki_Action_Plugin {
 
@@ -20,7 +20,7 @@ class action_plugin_stars2 extends DokuWiki_Action_Plugin {
         return array(
             'author' => 'Zahno Silvan',
             'email'  => 'zaswiki@gmail.com',
-            'date'   => '2020-07-07',
+            'date'   => '2025-02-07',
             'name'   => 'Stars2 Plugin',
             'desc'   => 'Embedding Rating Stars',
             'url'    => 'https://github.com/tschinz/dokuwiki_stars_plugin',
